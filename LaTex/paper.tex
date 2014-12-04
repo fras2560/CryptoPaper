@@ -1,5 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{latexsym}
+\usepackage{setspace}
+\doublespacing
 
 \parskip=3pt
 
@@ -34,6 +36,8 @@ Do people care about digital privacy and how can cryptography keep digital infor
 
 \noindent{\em Keywords}: Digital Privacy, Cryptography, Privacy enhancing technologies (PET),
 
+\clearpage
+
 \section{History of Growth and loss of Privacy}\label{sec:history}
 
 
@@ -55,7 +59,7 @@ The developer community and business are one creating the applications which col
 
 There is a lack of legislation. This is largely due to the how fast these techonologies have grown and how slow the political systems moves. Most of contract law is obsolete when it comes to the Internet and Internet transactions. Canada’s Anti-Spam Legislation (CASL) which was passed in Decemeber 2010 but not enforced until July 1, 2014 \cite{FastFacts}. It took about a decade and a half to create a spam law and another four years to implement it. This lack of legislation allows for companies to freely deal with their data, and user' agreements with little government interference. The goverment is doing little to ensure digital privacy and in certain cases in exploiting personal information in the name of security. A recent example is the N.S.A complaint about Apple's Iphone encryption of data where the user's password was used to encrypt the data \cite{Schneier}. Encryption is more a hassle and back doors make their job much easier.
 
-All business have the incentive to improve profit and without external incentives will strictly focus on profits. The two greatest external forces on corporations is government and public opinion. The government pressure on companies is non-existence and what force that is present is outdated. The public is less concerned about with drawbacks of the data privacy and more concerned with the benefits of the application. Most people ask what can it do for me instead of how does it work and what security measures are in place? These lack of incentive have lead to business tending to focus more what profit can be produced from personal data and not the long term impact it could have. There is a lack of research done by the companies producing these techonologies on the users. The negative side effects are not taken into consideration during the design process. Security is usually an after thought and privacy is never considered. This is evident in a recent study done by Cisco Canada in which they found "40 per cent of about 500 firms surveyed had security strategies" \cite{Blackwell}.
+All business have the incentive to improve profit and without external incentives will strictly focus on profits. The two greatest external forces on corporations is government and public opinion. The government pressure on companies is non-existence and what force that is present is outdated. The public is less concerned about with drawbacks of the data privacy and more concerned with the benefits of the application. Most people ask what can it do for me instead of how does it work and what security measures are in place? These lack of incentive have lead to business tending to focus more what profit can be produced from personal data and not the long term impact it could have. There is a lack of research done by the companies producing these techonologies on the users. The negative side effects are not taken into consideration during the design process. Security is usually an after thought and privacy is never considered. This is evident in a recent study done by Cisco Canada in which they found "40 per cent of about 500 firms surveyed had security strategies" \cite{Blackwell}. Just last week, Sony was hacked where a significant amount of employee information was leaked. Their are estimates of "100 terabytes of data" leaked containing information such as "list of employee salaries and bonuses; Social Security numbers and birth dates; HR employee performance reviews, criminal background checks and termination records" \cite{Zetter}.
 
 The demand of digital privacy is greater than the current supply of security. The lack of legislative and consumer pressures have prevented companies from increasing their level of security. This has resulted in insecure websites and vulnerable private information. 
 
@@ -70,7 +74,35 @@ up as an exemplary use of big data" \cite{Lazer}. It was reported that "GFT was 
 The rise of social reputation and impact on lives raised the need for security. The lure of big data entices companies to quickly convert implement big data storage and collection. The lure of big data possibilites sometimes overshadows security and digital privacy. Security and digital privacy should be more important that big data and its applications. "If I have no principles, and I build thousands of bridges without any actual science, lots of them will fall down, and great disasters will occur" (Micheal Jordan)\cite{Gomes}.
 
 \section{Ways to  Change}\label{sec:developers}
-This section talks about the ways in which cryptography can help achieve digital privacy
+It is clear that security and digital privacy need to be focused and strengthened. A developer needs to recognize this during the design of their system. They need to build into their system ways users can stay annonymous or delete private information when requested. Digital privacy should be the standard when creating web applications and a feature. What techonlogy can help developer keep personal information private?
+
+There a wide range of Private Enhancing techniques using Crypotgraphy. This paper will focus on Private Digital Credentials, Type X remailers, and Onion Routing focusing on how these can allow of digital privacy.
+
+\section{Private Digital Credentials}\label{sec:PDC}
+What is it?
+Digital Credentials are just information that can be used to qualify a certain propery. One Example would be a Laurier Digital Diploma whichs qualifies that a person graduated from Laurier University.  Private Digital Credentials are used as a way to qualify but keep anonymity for the presenter. The idea was first proposed by Daivd Chaum in 1985 \ref{Chaum}. He introduces the idea of unconditional untraceabile payments which used signatures called "blind signatures"\ref{Chaum}. 
+
+How does it work?
+David Chaum uses the analogy of Private Digital Credentials to the use of a carbon-paper-lined envelope. Once the letter is inserted into the envelope any mark on the exterior of the envelope will be applied to the letter. A person could sign the letter without ever seeing the letter. The proposed system is one in which a person uses blind signatures to receive the banks authentication of a dollar and subtracts the amount from the account. The banks uses the same signatures for all transactions. The bank can verify any letter since it uses requires its transaction but cannot identify which envelope the letter came from. The ideas relies on the use of a zero knowledge proof. A zero knowledge proof uses a NP-Complete problem so a person can verify the solution in polynomial time but cannont solve in polynomial time. The idea of the letter inside envelope is the information you want proof without letting the person know what that information is.
+
+How does it provide digital privacy?
+
+
+
+\section{Type X Remailers}\label{sec:type-x}
+What is it?
+
+How does it work?
+
+How does it provide digital privacy and its benefits?
+
+
+\section{Onion Routing}\label{}
+What is it?
+
+How does it work?
+
+How does it provide digital privacy and its benefits?
 
 \section{Conclusion}\label{sec:conclusion}
 Do it obvisouly
@@ -81,6 +113,7 @@ Do it obvisouly
 This work was done by author D.J.F. in partial fulfillment of the course requirements for CP460: Applied Cryptography in the Department of Physics and Computer Science at Wilfrid Laurier University.
 
 \clearpage
+\singlespace
 \begin{thebibliography}{99}
 \bibitem{Albergotti}
 	Albergotti, R. (2014, November 13). Facebook Gives Its Privacy Policy a Makeover. Retrieved November 16, 2014, {\sl http://blogs.wsj.com/digits/2014/11/13/facebook-gives-its-privacy-policy-a-makeover/}
@@ -125,6 +158,18 @@ This work was done by author D.J.F. in partial fulfillment of the course require
 
 \bibitem{Banayan}
 	Banayan, A. (2014, November 4). 2 Ways Big Data Can Make You Happier. Retrieved November 5, 2014, from https://www.linkedin.com/pulse/article/20141104090919-80844253-2-ways-big-data-can-make-you-happier?trk=tod-home-art-list-large\textunderscore0
+
+\bibitem{Zetter}
+	Zetter, K. (2014, December 3). Sony Got Hacked Hard: What We Know and Don’t Know So Far. Retrieved December 3, 2014, from http://www.wired.com/2014/12/sony-hack-what-we-know/
+
+\bibitem{Goldberg}
+	Goldberg, I., Wagner, D., and Brewer, E. (1997, January 21). Privacy-enhancing technologies for the Internet. Retrieved December 3, 2014, from http://www.cypherpunks.ca/~iang/pubs/privacy-compcon97.pdf
+
+\bibitem{GoldbergTwo}
+	Goldberg, I. (2007, December 1). Privacy Enhancing Technologies for the Internet III: Ten Years Later. Retrieved December 3, 2014, from http://www.cypherpunks.ca/~iang/pubs/pet3.pdf
+
+\bibitem{Chaum}
+	Chaum, D. (1985, October 10). Security without identification: Transaction systems to make big brother obsolete. Communications of the ACM, 1030-1044.
 \end{thebibliography}
 
 \end{document}
