@@ -96,14 +96,21 @@ Type III also knows as Mixminion had its first  release in 2002. Mixminion aimed
 Anonymous Remailers can be used to send communications anonymously. However Type III  has been said to not be trusted for anonymity \cite{GoldbertTwo}. The previous version have their technical issues. This details would need to be sorted out before this techonlogy can be replied upon.
 
 \section{Onion Routing}\label{}
-What is it?
+Onion Routing is a system that allows a user to commuicate with servers while maintaining anonymity. The name is derived from how the system peels away encryption similar to the peeling of an onion. The system to use this idea was the Onion Router and the idea was published in 1998 \cite{Reed}. 
 
-How does it work?
+The simple idea of Onion Routing is creating an indirect path between nodes starting at the user's node and ending at the recipents. Each node in the path does not the recipents but rather just the next node in the path. Each node does not know the path due to the way the packet is encrypted. Each node removes a level of encryption and to determine which node to pass to. This path may be used so the recipent can respond which allows of pseudonymous communications.
 
-How does it provide digital privacy and its benefits?
+The creators of Onion Routing designed it to prevent traffic analysis. This helps users be able to prevent someone from determining the private information. The creators even discussed applications of Onion Routing such as email, web browsing, digital cash, and a few others\cite{Reed}. Tor is the successor to the Onion Router and can be used for browsing along with other things. There are wide range of software and services that can be found on Tor Project webpage including Tor browser and even Orbot which is Tor for Android device. There are a few criticisms of Tor such as slow web browsing speed \cite{GoldbertTwo}.
+
+\section{Good Life Examples}\label{sec:real-life}
+Wickr is a new messenger which is available on Google Play store, Apple App Store, and even for desktop. It is uses peer-to-peer encryption and enables users to send encrypted messages.  According to its website it uses hashed all device information with SHA256 and encrypts all data with AES256. The Wickr server only handles encrypted messages and delete the message upon delivery. The server also never directly interacts with devices identifiers but onlt the hashes of them. Wickr has received four and a half stars on the Apple store from 80 different ratings and has a similar rating on the Google Play store. 
+
+Blackberry
+A Canadian based company focusing on mobile communications. It once had was the standard smart phone in Canada but quickly consumers switch to over to Apple and Android. Their were rumours about Blackberry being possible bought by various companies. The company hired a new C.E.O. who change the focus away from the consumer market. Blackberry now focuses on one of its strengths security and even Preseident Obama uses one.\cite{Marks} Blackberry is a good example of a company focusing on the under suplied market of security. The stock price seems to be trending upwards.
+
 
 \section{Conclusion}\label{sec:conclusion}
-Do it obvisouly
+There are rising concerns of consumers about privacy issues. Security is often over-shadowed by usability and convenient apps. Legislation is starting to approached these issues related to digital privacy and setting expectations on business. The business world is focused too much on big data and profitting from it however there are some who are focusing on security. The market for secure applications will grow and cryptography will allow for a consumer to keep digital privacy. Hopefully the supply of digital privacy will meet the demand of it.
 
 \begin{center}
 {\bf Acknowledgement}
@@ -168,6 +175,12 @@ This work was done by author D.J.F. in partial fulfillment of the course require
 
 \bibitem{Chaum}
 	Chaum, D. (1985, October 10). Security without identification: Transaction systems to make big brother obsolete. Communications of the ACM, 1030-1044.
+
+\bibitem{Reed}
+	Reed, M., Syverson, P., and Goldschlag, D. (1998, January 1). Anonymous Connections and Onion Routing. Retrieved December 5, 2014, from http://www.onion-router.net/Publications/JSAC-1998.pdf
+
+\bibitem{Marks}
+	Marks, G. (2014, March 4). Here's Why You May Be Buying BlackBerry Again. Retrieved December 5, 2014, from http://www.forbes.com/sites/quickerbettertech/2014/03/04/heres-why-you-may-be-buying-blackberry-again/
 \end{thebibliography}
 
 \end{document}
